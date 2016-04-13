@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: -webkit-linear-gradient(left top, #303030, #000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #303030, #000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #303030, #000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #303030, #000000); /* Standard syntax */
+    background-attachment: fixed;
+}
+
+#menu {
+    background-color: rgba(21, 21, 23, 0.95);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: #cccccc;
+    font-size: 11px;
+}
+#search {
+    margin-top:7px;
+    line-height: 25px;
+    height: 25px;
+    font-size: 18px;
+    color: #555;
+    border: none;
+    background-color: #ccc;
+    width: 50%;
+    transition: all 0.2s ease;
+}
+#allOrAny{
+    margin: 0 5px 0 10px;
+    top: 3px;
+    position: relative;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+#loadingMask {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.8);
+    z-index: 20;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    display: table;
+}
+
+#loadingMask span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#grid {
+    margin: 50px 0 50px 0;
+}
+#grid .message{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.grid-item {
+    box-sizing: border-box;
+    border: 1px solid #aaaaaa;
+    width: 200px;
+    height: 270px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+.grid-item>div{
+    width: 160px;
+    color: #cccccc;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: top;
+    min-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.grid-item .image {
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    height: 130px;
+    border: 1px solid black;
+}
+
+.grid-item .image img {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+}
+
+.grid-item:hover .image img {
+    width: 110%;
+    transition: all 0.2s ease;
+}
+
+.grid-item .info {
+    overflow: hidden;
+    margin: 5px auto 0 auto;
+}
+
+.grid-item .info a {
+    max-width: 40%;
+    color: #ffffff;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.grid-item .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px;
+    margin-top: 5px;
+}
+.grid-item .description a {
+    color: #ffffff;
+}
+
+.grid-item .tags{
+    margin-top: 10px;
+
+    white-space: nowrap;
+}

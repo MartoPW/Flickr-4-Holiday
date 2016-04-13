@@ -1,0 +1,25 @@
+{
+  "name": "holiday-extras",
+  "authors": [
+    "Martin Petkov <martin.petkov.work@gmail.com>"
+  ],
+  "description": "We take the hassle, you take the holiday",
+  "main": "index.html",
+  "keywords": [
+    "holiday",
+    "extras"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.holidayextras.co.uk/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "handlebars": "^4.0.5"
+  }
+}
